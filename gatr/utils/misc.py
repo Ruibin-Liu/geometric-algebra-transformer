@@ -19,8 +19,8 @@ class NaNError(BaseException):
 
 def get_device() -> torch.device:
     """Gets CUDA if available, CPU else."""
-    # return torch.device("cuda") if torch.cuda.is_available() else torch.device("cpu")
-    return torch.device("cpu")
+    
+    return torch.device("cuda") if torch.cuda.is_available() else torch.device("cpu")
 
 
 def frequency_check(step, every_n_steps, skip_initial=False, include_fractional=None):
