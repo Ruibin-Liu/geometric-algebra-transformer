@@ -1,0 +1,4 @@
+pdb_path,chain_id,resid,label
+/home/rliu/projects/DeepCys/data/ABPP/atom3d_pdbs/A0FGR8-1_C181_78_014.pdb,A,78,1
+/home/rliu/projects/DeepCys/data/ABPP/atom3d_pdbs/A0FGR8-1_C181_78_000.pdb,A,78,1
+/home/rliu/projects/DeepCys/data/ABPP/atom3d_pdbs/A0FGR8-1_C181_181_-1.pdb,A,181,0

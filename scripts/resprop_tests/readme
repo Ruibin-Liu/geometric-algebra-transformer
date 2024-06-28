@@ -1,0 +1,16 @@
+## 1. Testing whether we can generate a sub dataset
+Run:
+```
+docker run --rm -it -v $PWD:$PWD -v /home/rliu/projects/DeepCys/data/ABPP/atom3d_pdbs:/home/rliu/projects/DeepCys/data/ABPP/atom3d_pdbs -w $PWD gatr:latest /bin/bash
+```
+in the base directory of `geometric_algebra_transformer` and inside the container:
+```
+BASEDIR=/tmp/gatr-experiments && python scripts/generate_resprop_dataset.py base_dir="${BASEDIR}" seed=42 data.residues_file_path="scripts/resprop_tests/test.csv"
+```
+Alternatively, we can run locally in the `gatr-dev` conda environment. 
+```
+export CUDA_HOME=/home/rliu/software/cuda121
+export LD_LIBRARY_PATH=/home/rliu/software/cuda121/lib64
+BASEDIR=/tmp/gatr-experiments
+BASEDIR=/tmp/gatr-experiments && python scripts/generate_resprop_dataset.py base_dir="${BASEDIR}" seed=42 data.residues_file_path="scripts/resprop_tests/test.csv"
+```

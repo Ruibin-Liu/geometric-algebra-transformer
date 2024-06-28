@@ -93,3 +93,7 @@ potpourri3d>=0.0.8
 prettytable
 trimesh>=3.15.3
 vtk>=9.2.2
+
+# Res prop experiment
+moldf
+torcheval
